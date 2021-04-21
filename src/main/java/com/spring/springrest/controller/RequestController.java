@@ -3,17 +3,11 @@ package com.spring.springrest.controller;
 import com.spring.springrest.dto.OrganisationDTO;
 import com.spring.springrest.dto.ResponseDTO;
 import com.spring.springrest.dto.UserDTO;
-import com.spring.springrest.entities.OrganisationDetails;
-import com.spring.springrest.entities.UserDetails;
 import com.spring.springrest.services.OrganisationService;
 import com.spring.springrest.services.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.UUID;
 
 @RestController
 @Validated
