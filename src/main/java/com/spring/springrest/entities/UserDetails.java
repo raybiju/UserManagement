@@ -10,10 +10,10 @@ import java.util.UUID;
 @Table(name="userdetails1")
 public class UserDetails {
 
-    private UUID organisationId;
+    private Long organisationId;
     @Id
     @Column(name="userid",insertable=false,unique=true,nullable=false)
-    private UUID userid;
+    private Long userid;
 
     @Column(name="username",nullable = false)
     private String username;
@@ -45,7 +45,7 @@ public class UserDetails {
 
 
 
-    public UserDetails(UUID organisationId, UUID userid, String username, String address, String currentStatus) {
+    public UserDetails(Long organisationId, Long userid, String username, String address, String currentStatus) {
 
         this.organisationId = organisationId;
         this.userid = userid;
@@ -70,11 +70,11 @@ public class UserDetails {
 
 
 
-    public UUID getUserid() {
+    public Long getUserid() {
         return userid;
     }
 
-    public void setUserid(UUID userid) {
+    public void setUserid(Long userid) {
         this.userid = userid;
     }
 
@@ -87,11 +87,11 @@ public class UserDetails {
     }
 
 
-    public UUID getOrganisation_id() {
+    public Long getOrganisation_id() {
         return organisationId;
     }
 
-    public void setOrganisation_id(UUID organization_id) {
+    public void setOrganisation_id(Long organization_id) {
         this.organisationId = organization_id;
     }
 

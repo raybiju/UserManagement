@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CreateOrganisationMapper {
-    private final OrganisationService organisationservice;
+   // private final OrganisationService organisationservice;
 
-    public CreateOrganisationMapper(OrganisationService organisationservice) {
+   /* public CreateOrganisationMapper(OrganisationService organisationservice) {
         this.organisationservice = organisationservice;
-    }
+    }*/
 
     public OrganisationDetails OrganisationDtoToOrganisationDetails(OrganisationDTO organisationDto)
     {

@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 @Validated
 @RequestMapping("/test")
@@ -31,7 +33,7 @@ public class RequestController {
 
 
  @PostMapping("/adduserdetails")
- public ResponseEntity<ResponseDTO> addUserDetails(@RequestBody @Validated UserDTO userDto) {
+ public ResponseEntity<ResponseDTO> addUserDetails(@RequestBody UserDTO userDto) {
 
   return ResponseEntity.ok(new ResponseDTO(true, userservice.addUserDetails(userDto)));
 

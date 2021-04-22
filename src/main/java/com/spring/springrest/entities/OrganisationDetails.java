@@ -10,13 +10,13 @@ public class OrganisationDetails {
      @Id
      @GeneratedValue
      @Column(name = "organisationId" ,unique=true,nullable = false)
-    private UUID organisationId;
+    private Long organisationId;
 
 
      @Column(name ="organisationName" ,unique = true,nullable = false)
     private String organisationName;
 
-   public OrganisationDetails(UUID organisationId, String organisationName) {
+   public OrganisationDetails(Long organisationId, String organisationName) {
 
         this.organisationId = organisationId;
         this.organisationName = organisationName;
@@ -27,11 +27,11 @@ public class OrganisationDetails {
     }
 
 
-    public UUID getOrganisationId() {
+    public Long getOrganisationId() {
         return organisationId;
     }
 
-    public void setOrganisationId(UUID organisationId) {
+    public void setOrganisationId(Long organisationId) {
         this.organisationId = organisationId;
     }
 

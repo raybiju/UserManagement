@@ -6,12 +6,12 @@ import org.springframework.stereotype.Component;
 import java.util.UUID;
 @Component
 public class OrganisationDTO {
-    private UUID organisationId;
+    private Long organisationId;
     @NotNull
     private String OrganisationName;
 
 
-    public OrganisationDTO(UUID organisationId, String organisationName) {
+    public OrganisationDTO(Long organisationId, String organisationName) {
         this.organisationId = organisationId;
         OrganisationName = organisationName;
     }
@@ -20,11 +20,11 @@ public class OrganisationDTO {
 
     }
 
-    public UUID getOrganisationId() {
+    public Long getOrganisationId() {
         return organisationId;
     }
 
-    public void setOrganisationId(UUID organisationId) {
+    public void setOrganisationId(Long organisationId) {
         this.organisationId = organisationId;
     }
 

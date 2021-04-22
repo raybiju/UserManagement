@@ -1,20 +1,19 @@
 package com.spring.springrest.mapper;
+
 import com.spring.springrest.dto.UserDTO;
 import com.spring.springrest.entities.UserDetails;
 import com.spring.springrest.exception.ResourceNotFoundException;
-import com.spring.springrest.services.UserService;
-import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.stereotype.Component;
 
 @Component
 public class CreateUserMapper{
 
-private final UserService userService;
+//private final UserService userService;
 
 
-    public CreateUserMapper(UserService userService) {
+   /* public CreateUserMapper(UserService userService) {
         this.userService = userService;
-    }
+    }*/
 
     public UserDetails UserDtoToUser(UserDTO userDto) throws ResourceNotFoundException {
         UserDetails userdetails =new UserDetails();

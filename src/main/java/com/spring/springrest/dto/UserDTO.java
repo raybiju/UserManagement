@@ -5,13 +5,13 @@ import com.sun.istack.NotNull;
 import org.springframework.validation.annotation.Validated;
 
 import javax.persistence.Enumerated;
-import java.util.UUID;
+//import java.util.UUID;
 
 @Validated
 public class UserDTO {
-    private UUID userid;
+    private Long userid;
     @NotNull
-    private UUID organisationId;
+    private Long organisationId;
 
 
 private String username;
@@ -22,7 +22,7 @@ private boolean active;
     private  UserCurrentStatus currentStatus;
 
 
-    public UserDTO(UUID userid, UUID organisationId, String username, String address, boolean active, UserCurrentStatus currentStatus) {
+    public UserDTO(Long userid, Long organisationId, String username, String address, boolean active, UserCurrentStatus currentStatus) {
         this.userid = userid;
         this.organisationId = organisationId;
         this.username = username;
@@ -34,19 +34,19 @@ private boolean active;
 
     }
 
-    public UUID getUserid() {
+    public Long getUserid() {
         return userid;
     }
 
-    public void setUserid(UUID userid) {
+    public void setUserid(Long userid) {
         this.userid = userid;
     }
 
-    public UUID getOrganisationId() {
+    public Long getOrganisationId() {
         return organisationId;
     }
 
-    public void setOrganisationId(UUID organisationId) {
+    public void setOrganisationId(Long organisationId) {
         this.organisationId = organisationId;
     }
 
